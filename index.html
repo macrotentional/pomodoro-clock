@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="js/pomodoro-brain.js"></script>
+
+    <title>pomodoro clock</title>
+  </head>
+  <body>
+      <div class="container">
+          <div class="row">
+              <div class="col text-center py-5">
+                <h1>pomodoro clock</h1>
+              </div> 
+          </div>
+      </div>
+
+      <div class="row text-center">
+        <div class="col">
+          <div id="break-label"></div>
+          <button id="break-increment" class="btn-outline-success btn-block" onclick="incrementBreak()">More break</button>
+
+          <h2>Break length</h2>
+          <div id="break-length">
+              5
+          </div>
+          <button id="break-decrement" class="btn-outline-primary btn-block" onclick="decrementBreak()">
+              Less break
+            </button>
+        </div>
+    <div class="col">
+        <div id="session-label"></div>
+
+        <button id="session-increment" class="btn-outline-success btn-block" onclick="incrementSession()">
+            More session
+        </button>
+
+        <h2>Session length</h2>
+        <div id="session-length">
+       25
+        </div>
+        <button id="session-decrement" class="btn-outline-primary btn-block" onclick="decrementSession()">Less session</button>
+
+      </div>
+
+    </div>
+
+    <div class="row py-4 text-center">
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">
+                      <div id="timer-label">
+                      Session initialized
+                      </div>
+                    </h5>
+                  <div id="timer-left">
+                  <span id="minutes">25</span>:<span id="seconds">00</span>
+                  <div class="row">
+                      <div class="col">
+                      <a href="#" id="start_stop" class="btn btn-outline-primary" onclick="toggleOnOff()">Start/Stop</a>
+                  </div>
+                    <div class="col">
+                  <a href="#" id="reset" class="btn btn-outline-danger" onclick="resetClock()">Reset</a>
+            </div>
+                </div>
+              </div>
+       
+            </div>
+        </div>
+        </div>
+
+
+</div>
+
+
+
+
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+  </body>
+</html>
+
